@@ -10,17 +10,34 @@ Author : Stuart <svkem2@users.noreply.github.com>
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:b="http://bootsfaces.net/ui">
 
+    <ui:define name="leftbar">
+            <b:container fluid="true">
+                <h1>Left info</h1>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. 
+                    Use it as a starting point to create something more unique.
+                </p>                
+            </b:container>
+    </ui:define>
+
     <ui:define name="content">
         <b:jumbotron>
             <b:container>
                 <h1>Hello, world!</h1>
                 <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. 
                     Use it as a starting point to create something more unique.
-                </p>
-                
+                </p>                
             </b:container>
 
         </b:jumbotron>
+    </ui:define>
+
+    <ui:define name="rightbar">
+            <b:container fluid="true">
+                <h1>Right info</h1>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. 
+                    Use it as a starting point to create something more unique.
+                </p>                
+            </b:container>
     </ui:define>
 
 </ui:composition>
