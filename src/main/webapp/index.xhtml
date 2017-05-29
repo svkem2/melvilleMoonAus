@@ -5,9 +5,22 @@ Author : Stuart <svkem2@users.noreply.github.com>
 -->
 
 <ui:composition template="/WEB-INF/templates/wrapper.xhtml" 
-      xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:b="http://bootsfaces.net/ui">
-    
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:b="http://bootsfaces.net/ui">
+
+    <ui:define name="content">
+        <b:jumbotron>
+            <b:container>
+                <h1>Hello, world!</h1>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. 
+                    Use it as a starting point to create something more unique.
+                </p>
+                
+            </b:container>
+
+        </b:jumbotron>
+    </ui:define>
+
 </ui:composition>
