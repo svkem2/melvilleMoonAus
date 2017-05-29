@@ -11,40 +11,38 @@ Author : Stuart <svkem2@users.noreply.github.com>
 
     <h:head></h:head>
     <h:body> 
-        <b:container>
-            <b:row class="header">
-                <ui:insert name="header" >
-                    <ui:include src="/WEB-INF/templates/header.xhtml" />
-                </ui:insert> 
-            </b:row>
+        <b:row class="header">
+            <ui:insert name="header" >
+                <ui:include src="/WEB-INF/templates/header.xhtml" />
+            </ui:insert> 
+        </b:row>
 
-            <b:row class="contentWrapper">
+        <b:row class="contentWrapper">
 
-                <b:column col-xs="12" col-sm="12" col-md="2" class="leftbar">
-                    <ui:insert name="lefbar" >
-                        <ui:include src="/WEB-INF/templates/leftbar.xhtml" />
-                    </ui:insert>    
-                </b:column>
+            <b:column col-xs="12" col-sm="12" col-md="2" class="leftbar">
+                <ui:insert name="lefbar">
+                    <ui:include src="/WEB-INF/templates/leftbar.xhtml" />
+                </ui:insert>    
+            </b:column>
 
-                <b:column col-xs="12" col-sm="12" col-md="8" class="content">
-                    <ui:insert name="content" >
-                        <ui:include src="/WEB-INF/templates/content.xhtml" />
-                    </ui:insert>    
-                </b:column>
+            <b:column col-xs="12" col-sm="12" col-md="8" class="content">
+                <ui:insert name="content">
+                    <ui:include src="/WEB-INF/templates/content.xhtml" />
+                </ui:insert>    
+            </b:column>
 
-                <b:column col-xs="12" col-sm="12" col-md="2" class="rightbar">
-                    <ui:insert name="rightbar" >
-                        <ui:include src="/WEB-INF/templates/rightbar.xhtml" />
-                    </ui:insert>    
-                </b:column>
+            <b:column col-xs="12" col-sm="12" col-md="2" class="rightbar">
+                <ui:insert name="rightbar">
+                    <ui:include src="/WEB-INF/templates/rightbar.xhtml" />
+                </ui:insert>    
+            </b:column>
 
-            </b:row>
+        </b:row>
 
-            <b:row class="footer">
-                <ui:insert name="footer" >
-                    <ui:include src="/WEB-INF/templates/footer.xhtml" />
-                </ui:insert>
-            </b:row>
-        </b:container>
+        <b:row class="footer">
+            <ui:insert name="footer" >
+                <ui:include src="/WEB-INF/templates/footer.xhtml" />
+            </ui:insert>
+        </b:row>
     </h:body>
 </html>
