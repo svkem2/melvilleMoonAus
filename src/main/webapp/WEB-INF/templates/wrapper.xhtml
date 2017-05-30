@@ -9,7 +9,7 @@ Author : Stuart <svkem2@users.noreply.github.com>
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:b="http://bootsfaces.net/ui"> 
 
-    <h:head></h:head>
+    <h:head><h:outputStylesheet name="css/top.css"/></h:head>
     <h:body> 
         <b:row class="header">
             <ui:insert name="header" >
@@ -36,7 +36,7 @@ Author : Stuart <svkem2@users.noreply.github.com>
                     <ui:include src="/WEB-INF/templates/rightbar.xhtml" />
                 </ui:insert>    
             </b:column>
-            
+
         </b:row>
 
         <b:row class="footer">
@@ -46,5 +46,8 @@ Author : Stuart <svkem2@users.noreply.github.com>
                 </ui:insert>
             </b:container>
         </b:row>
+        <b:container>
+            <b:image class="bkImg" name="img/working/mm-footer.png"/>
+        </b:container>
     </h:body>
 </html>
