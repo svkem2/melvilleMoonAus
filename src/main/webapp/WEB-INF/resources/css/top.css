@@ -9,9 +9,18 @@ Author : Stuart <svkem2@users.noreply.github.com>
 
 /* CUSTOM STYLES */
 
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+
 /* BACKGROUND */
-.bkImg{
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
+
+body{
+    background-image: url("#{resource['img/working/mm-footer.png']}");
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
