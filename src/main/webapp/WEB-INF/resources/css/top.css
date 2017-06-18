@@ -10,17 +10,100 @@ Author : Stuart <svkem2@users.noreply.github.com>
 /* CUSTOM STYLES */
 
 
-
 html, body {
-    margin: 0;
-    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
 }
+
+/* FONTS */
+@font-face {
+    font-family: 'bebasregular' !important;
+    src: url("#{resource['fonts/bebas___-webfont.woff2']}") format('woff2'),
+        url("#{resource['bebas___-webfont.woff']}") format('woff') !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+.header-text {
+    margin-top: 10px !important;
+    margin-bottom: 5px !important;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 2em !important;
+    color:#1b0808 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+}
+
+h2 {
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 1.5em !important;
+    color:#350808 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+}
+
+/* LAYOUT COMPONENTS */
+hr.seperator-1 { 
+    border: 0 !important; 
+    height: 1px !important; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) !important; 
+    margin:0 25% 0 25% !important;
+}
+
+/* HEADER AND LOGO */
+.logo{
+    display: block !important;
+    text-align: center !important;
+    height: 128px !important;
+    width: 215px !important;
+    margin:0 auto !important;
+}
+
+.logo-text{
+    display: block !important;
+    text-align: center !important;
+    height: 20px !important;
+    width: 333px !important;
+    margin:1% auto !important;
+}
+
 
 
 /* BACKGROUND */
 
-body{
-    background-image: url("#{resource['img/working/mm-footer.png']}");
-    background-repeat: no-repeat;
-    background-position: center bottom;
+/* BACKGROUND IMG */
+
+#bg-img {
+    height:75vh !important;
+}
+
+.bg-img {
+    width: 100% !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    font: 0/0 serif !important;
+    text-shadow: none !important;
+    color: transparent !important;
+    background-size: contain !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+}
+
+.bg-img-index{
+    background-image: url("#{resource['img/working/mm-footer.png']}") !important; 
+}
+
+.bg-img-gallery{
+    background-image: url("#{resource['img/working/mm-gallery.jpg']}") !important; 
+}
+
+.bg-img-about-us{
+    background-image: url("#{resource['img/working/mm-about.jpg']}") !important; 
+}
+
+.bg-img-seat-covers{
+    background-image: url("#{resource['img/working/mm-seatcovers.jpg']}") !important; 
 }

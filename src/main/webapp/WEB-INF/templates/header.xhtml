@@ -11,23 +11,21 @@ Author : Stuart <svkem2@users.noreply.github.com>
 
     <body>
         <ui:composition> 
-            <b:navBar  brandHref="#">
-                <b:image class="navbar-left" name="img/working/mm-logo.png" style="float:left" />
-                <b:image class="navbar-left" name="img/working/mm-text.png" style="float:left;margin-top:4%;padding-left:1%;" />
-                
-                <b:navbarLinks pull="right" styleClass="hidden-xs">
-                    <b:navLink value="Link" href="#"></b:navLink>
-                    <b:dropMenu value="Dropdown">
-                        <b:navLink value="Action" href="#"></b:navLink>
-                        <b:navLink value="Another action" href="#"></b:navLink>
-                        <b:navLink value="Something else here" href="#"></b:navLink>
-                        <b:navLink></b:navLink>
-                        <b:navLink header="Nav header"></b:navLink>
-                        <b:navLink value="Separated link" href="#"></b:navLink>
-                        <b:navLink value="One more separated link" href="#"></b:navLink>
-                    </b:dropMenu>
-                </b:navbarLinks>
-            </b:navBar>
+            <div id="navigation">
+                <b:navBar brand-img="#{resource['img/working/mm-text.png']}"  
+                          brand-img-style="hidden-xs"
+                          brandHref="#{request.contextPath}/index.xhtml"
+                          sticky="true">
+                    <b:navbarLinks pull="right">
+                        <b:navLink value="Home" href="#{request.contextPath}/index.xhtml"></b:navLink>
+                        <b:navLink value="About Us" href="#{request.contextPath}/info/about-us.xhtml"></b:navLink>
+                        <b:navLink value="Seat Covers" href="#{request.contextPath}/info/seat-covers.xhtml"></b:navLink>
+                        <b:navLink value="Gallery" href="#{request.contextPath}/info/gallery.xhtml"></b:navLink>
+                    </b:navbarLinks>
+                </b:navBar>
+                <b:image class="logo" value="#{resource['img/working/mm-logo.png']}"/>                
+            </div>
+
         </ui:composition>	
     </body>
 </html>
